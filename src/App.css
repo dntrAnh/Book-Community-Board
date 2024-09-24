@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card, .book-card {
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 1em 0;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.card:hover, .book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2, .book-title {
+  font: 900 1.5em/1.1 "Merriweather", serif;
+  margin: 0.5em 0;
+  color: black;
+}
+
+.card p, .book-author, .book-rating {
+  margin: 0.2em 0;
+  color: #555;
+}
+
+form {
+  margin: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input {
+  padding: 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%;
+  max-width: 400px;
+}
+
+form button, .delete-button {
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button {
+  background-color: #646cff;
+  color: white;
+}
+
+form button:hover {
+  background-color: #545bdc;
+}
+
+.delete-button {
+  background-color: #ff4d4d;
+  color: white;
+}
+
+.delete-button:hover {
+  background-color: #ff1a1a;
+}
+
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 16px;
+}
+
+.book-card {
+  flex: 0 1 calc(25% - 16px);
+  min-width: 200px;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font: 500 1em/1.1 "Merriweather", serif;
+}
+
+.book-image {
+  width: 100%;
+  height: auto;
+  max-width: 150px;
+  border-radius: 8px;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.merriweather-black {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 2.5em;
+  font: 900 2.5em/1.1 "Merriweather", serif;
+  margin: 0.5em 0;
+}
+
+input {
+  font: 500 1em/1.1 "Merriweather", serif;
+}
